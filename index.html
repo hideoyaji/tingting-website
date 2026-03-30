@@ -14,14 +14,18 @@
       background-color: #faf8f5;
       color: #3a3a3a;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       min-height: 100vh;
       padding: 2rem;
     }
 
-    /* メインコンテナ */
-    .container {
+    /* ヒーローセクション（画面中央に配置） */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
       text-align: center;
       max-width: 480px;
     }
@@ -67,6 +71,50 @@
       color: #bbb;
       text-transform: uppercase;
     }
+
+    /* ゲストセクション */
+    .guests {
+      width: 100%;
+      max-width: 480px;
+      padding: 3rem 0 2rem;
+    }
+
+    .guests-title {
+      font-size: 0.75rem;
+      font-family: "Noto Sans JP", sans-serif;
+      letter-spacing: 0.15em;
+      color: #bbb;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* 各ゲストのエントリー */
+    .guest-entry {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .guest-date {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 0.7rem;
+      color: #ccc;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.3rem;
+    }
+
+    .guest-name {
+      font-size: 0.95rem;
+      color: #3a3a3a;
+      margin-bottom: 0.4rem;
+    }
+
+    .guest-comment {
+      font-size: 0.85rem;
+      color: #888;
+      line-height: 1.8;
+      font-style: italic;
+    }
   </style>
 
   <!-- Google Fonts -->
@@ -76,16 +124,33 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1 class="title-zh">半日閑</h1>
-    <p class="title-reading">はんにちひま</p>
-    <div class="divider"></div>
-    <p class="description">
-      忙しい日々のなかで、半日の閑（ひま）を。<br>
-      中国茶とともに、ゆるやかな時間を過ごす場所。
-    </p>
-    <p class="coming-soon">coming soon</p>
+  <!-- ヒーロー：半日閑の紹介 -->
+  <div class="hero">
+    <div>
+      <h1 class="title-zh">半日閑</h1>
+      <p class="title-reading">はんにちひま</p>
+      <div class="divider"></div>
+      <p class="description">
+        忙しい日々のなかで、半日の閑（ひま）を。<br>
+        中国茶とともに、ゆるやかな時間を過ごす場所。
+      </p>
+      <p class="coming-soon">coming soon</p>
+    </div>
   </div>
+
+  <!-- ゲスト一覧：開催後にここにエントリーを追加していく -->
+  <!--
+  <section class="guests">
+    <p class="guests-title">Guests</p>
+
+    <div class="guest-entry">
+      <p class="guest-date">2026.xx.xx</p>
+      <p class="guest-name">○○さん</p>
+      <p class="guest-comment">「一言コメント」</p>
+    </div>
+
+  </section>
+  -->
 
 </body>
 </html>
