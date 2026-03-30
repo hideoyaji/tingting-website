@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guests — 半日閑</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    /* 全体のレイアウト */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+      background-color: #faf8f5;
+      color: #3a3a3a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 3rem 2rem;
+    }
+
+    /* ページタイトル */
+    .page-title {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: #bbb;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    /* サロン名 */
+    .salon-name {
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      color: #2a2a2a;
+      margin-bottom: 2.5rem;
+    }
+
+    /* 区切り線 */
+    .divider {
+      width: 40px;
+      height: 1px;
+      background-color: #ccc;
+      margin: 0 auto 3rem;
+    }
+
+    /* ゲスト一覧コンテナ */
+    .guests {
+      width: 100%;
+      max-width: 480px;
+    }
+
+    /* 各ゲストのエントリー */
+    .guest-entry {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .guest-date {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 0.7rem;
+      color: #ccc;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+
+    .guest-name {
+      font-size: 1rem;
+      color: #3a3a3a;
+      margin-bottom: 0.5rem;
+    }
+
+    .guest-comment {
+      font-size: 0.85rem;
+      color: #888;
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    /* まだゲストがいない時のメッセージ */
+    .no-guests {
+      text-align: center;
+      color: #bbb;
+      font-size: 0.9rem;
+      line-height: 2;
+      padding: 2rem 0;
+    }
+
+    /* トップへ戻るリンク */
+    .back-link {
+      margin-top: auto;
+      padding-top: 3rem;
+    }
+
+    .back-link a {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      color: #999;
+    }
+  </style>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <p class="page-title">Guests</p>
+  <h1 class="salon-name">半日閑</h1>
+  <div class="divider"></div>
+
+  <div class="guests">
+
+    <p class="no-guests">
+      まもなく、最初のお客さまをお迎えします。
+    </p>
+
+    <!-- ゲスト追加テンプレート：以下をコピーして上のno-guestsと差し替える
+    <div class="guest-entry">
+      <p class="guest-date">2026.xx.xx</p>
+      <p class="guest-name">○○さん</p>
+      <p class="guest-comment">「一言コメント」</p>
+    </div>
+    -->
+
+  </div>
+
+  <div class="back-link">
+    <a href="/">← 半日閑トップへ</a>
+  </div>
+
+</body>
+</html>
