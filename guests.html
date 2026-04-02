@@ -73,6 +73,17 @@
       margin-bottom: 0.5rem;
     }
 
+    .guest-name a {
+      color: #3a3a3a;
+      text-decoration: none;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .guest-name a:hover {
+      color: #666;
+      border-bottom-color: #999;
+    }
+
     .guest-comment {
       font-size: 0.85rem;
       color: #888;
@@ -121,15 +132,17 @@
 
   <div class="guests">
 
-    <p class="no-guests">
-      まもなく、最初のお客さまをお迎えします。
-    </p>
+    <div class="guest-entry">
+      <p class="guest-date">2026.04.02</p>
+      <p class="guest-name"><a href="https://mino-take.net/#profile" target="_blank" rel="noopener">しんどう こうすけ</a> さん</p>
+      <p class="guest-comment">六堡茶を陳皮とともに。</p>
+    </div>
 
-    <!-- ゲスト追加テンプレート：以下をコピーして上のno-guestsと差し替える
+    <!-- ゲスト追加テンプレート
     <div class="guest-entry">
       <p class="guest-date">2026.xx.xx</p>
       <p class="guest-name">○○さん</p>
-      <p class="guest-comment">「一言コメント」</p>
+      <p class="guest-comment">一言コメント</p>
     </div>
     -->
 
